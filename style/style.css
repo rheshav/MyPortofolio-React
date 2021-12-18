@@ -1,129 +1,61 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-size: 12px;
-    font-family: sans-serif;
+  font-size: px;
+  font-family: sans-serif;
 }
 
 a {
-    text-decoration: none;
-    color: #fff;
-}
-
-header {
-    padding: 1rem;
-    /* margin: px; */
-    background-color: rgb(3, 3, 77);
-    /* margin-bottom: 2rem; */
-    position: fixed;
-    width: 100%;
-}
-
-header h1 {
-    text-align: center;
-    font-size: 35px;
-    color: white;
+  text-decoration: none;
+  color: #fff;
 }
 
 section {
-    padding: 5rem;
+  padding-top: 15vh;
 }
 
-.bg img {
-    margin-top: 2rem;
-    width: 30%;
-    height: 30%;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+.jumbotron,
+#skills,
+#contact_me {
+  background-color: #d4e2f0;
 }
 
-#biografi {
-    background-color: lightblue;
-    min-height: 60rem;
-    /* padding-top: rem; */
-    /* margin-top: 2rem; */
+h3 {
+  text-align: center;
+  margin-bottom: 5vh;
 }
 
-#skills {
-    font-size: 25px;
+.skills-card {
+  transition: 0.3s;
 }
 
-.row {
-    display: flex;
-    /* margin: auto; */
+.skills-card:hover {
+  color: white;
+  background-color: #0e0446;
 }
 
-.col {
-    flex: 50%;
-    padding: 10px;
-    /* height: 200px; */
-    margin: 0 10px;
+.skills-card img {
+  padding: 1rem;
+  height: 15rem;
 }
 
-
-/* section article {
-    padding: 2rem;
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: contain;
-    min-height: 30rem;
-    background-image: url(https://st2.depositphotos.com/1802620/7621/v/600/depositphotos_76219969-stock-illustration-online-shopping-flat-concept.jpg);
-} */
-
-article {
-    font-size: 20px;
-    text-align: center;
-    /* margin-top: 20rem; */
-    margin-top: 3rem;
+.projects-card {
+  transition: 0.3s;
 }
 
-footer {
-    background-color: rgb(3, 3, 77);
-    color: white;
-    min-height: 5rem;
+.projects-card:hover {
+  transform: scale(1.05);
 }
 
-.copyright {
-    font-size: 14px;
-    /* margin-top: 5rem; */
-    padding: 2rem;
+.projects-card img {
+  padding: 1rem;
+  height: 15rem;
 }
 
-.section {
-    margin: auto;
-    padding: 5rem;
-}
-
-#myproject {
-    font-size: 25px;
-    background-color: lightblue;
-}
-
-h2 {
-    padding: 10px;
-    font-size: 25px;
-}
-
-table {
-    font-size: 15px;
-}
-
-td {
-    text-align: justify;
-    padding: 5px;
-}
-
-#contact {
-    /* text-align: center; */
-}
-
-label {
-    font-size: 14px;
-    text-align: center;
-    /* margin-bottom: 2px; */
+footer a:hover {
+  font-size: large;
 }

@@ -1,106 +1,246 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
     <link rel="stylesheet" href="style/style.css" />
-    <title>My Portofolio</title>
-</head>
+    <link rel="shortcut icon" href="assets/react-icon-29.jpg" type="image/x-icon" sizes="32x32">
+    <title>Biografi</title>
+  </head>
 
-<body>
+  <body id="home">
     <header>
-        <h1>My Portofolio</h1>
+      <nav class="navbar navbar-expand-lg navbar-dark shadow fixed-top" style="background-color: #0e0446">
+        <div class="container">
+          <a class="navbar-brand streamline" href="#">Rhesa Havilah Mondi</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact_me">Contact Me</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
-    <!-- <hr /> -->
-    <section id="biografi" class="section">
-        <div class="container">
-            <div class="bg">
-                <img src="https://st2.depositphotos.com/1802620/7621/v/600/depositphotos_76219969-stock-illustration-online-shopping-flat-concept.jpg" alt="" />
-            </div>
-            <article>
-                <h2>Biografi</h2>
-                <p>
-                    A graduate of computer science at Sebelas Maret University, looking to secure a job position as Frontend Developer position to use and develop my skill and knowledge in a practical environment. My career goal is to assume a role that allows me contribute
-                    to an impactful project.
-                </p>
-            </article>
-        </div>
-    </section>
-    <section id="skills" class="section">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h2>Skills</h2>
-                    <ul>
-                        <li>PHP</li>
-                        <li>Javascript</li>
-                        <li>MySQL</li>
-                        <li>Cloud Computing</li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <h2>Other Skills</h2>
-                    <ol>
-                        <li>Node Express JS</li>
-                        <li>React JS</li>
-                    </ol>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="myproject" class="section">
-        <div class="container">
-            <h2>My Projects</h2>
-            <table border="1px" cellspacing="2px" cellpadding="2px">
-                <thead>
-                    <th>No</th>
-                    <th>Project</th>
-                    <th>Description</th>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>MANGAN Website</td>
-                        <td>As Data entry for "MANGAN" website and aplication. Also responsible for some of the display in "MANGAN" web application. And create a food recommendation based on restaurant's content.</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Angkasapura Website</td>
-                        <td>In charge of creating a good display for customer satisfactory system and admin system at PT. Angkasa Pura I Kantor Cabang Bandar Udara Adi Soemarmo</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </section>
-    <section id="contact" class="section">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <form action="">
-                <label>
-            Email:
-            <br />
-            <input type="email" name="Email" />
-          </label>
-                <br /><br />
-                <label>
-            Message:
-            <br />
-            <!-- <input type="textarea" name="message" />
-            -->
-            <textarea name="message" id="message" cols="30" rows="5"></textarea>
-          </label>
-                <br />
-                <button id="submit " type="submit " style="margin-top: 5px; padding: 5px"><span>Submit</span></button>
-            </form>
-        </div>
-    </section>
-    <footer>
-        <div class="copyright">
-            <p id="footer">Created with love by Rhesa Havilah Mondi</p>
-        </div>
-    </footer>
-</body>
 
+    <!-- Jumbotron -->
+    <section class="jumbotron text-center">
+      <img src="assets/android-chrome-192x192.png" alt="Me" width="200px" class="rounded-circle img-thumbnail" />
+      <p class="lead mt-2 pt-2 fs-3">Software Engineer</p>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#ffffff"
+          fill-opacity="1"
+          d="M0,64L80,90.7C160,117,320,171,480,176C640,181,800,139,960,117.3C1120,96,1280,96,1360,96L1440,96L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- end of jumbotron -->
+
+    <!-- about -->
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h3>About <span style="color: #1d00c0">Me</span></h3>
+          </div>
+        </div>
+        <div class="row justify-content-center fs-5 text-center">
+          <div class="col-lg-10">
+            <p>
+              A graduate of computer science at Sebelas Maret University, looking to secure a job position as Frontend Developer position to use and develop my skill and knowledge in a practical environment. My career goal is to assume a
+              role that allows me contribute to an impactful project.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#d4e2f0"
+            fill-opacity="1"
+            d="M0,192L48,170.7C96,149,192,107,288,112C384,117,480,171,576,176C672,181,768,139,864,149.3C960,160,1056,224,1152,229.3C1248,235,1344,181,1392,154.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+          ></path>
+        </svg>
+      </div>
+    </section>
+    <!-- end of about -->
+
+    <!-- skills -->
+    <section id="skills">
+      <div class="container">
+        <h3>My Skills</h3>
+        <div class="skills">
+          <div class="row row-cols-1 row-cols-md-3 g-3">
+            <div class="col">
+              <div class="card h-100 skills-card">
+                <img src="assets/hcj.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">HTML, CSS, Javascript</h5>
+                  <p class="card-text">Great understanding of basic web programming</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 skills-card">
+                <img src="assets/mern.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">MERN</h5>
+                  <p class="card-text">Basic Understanding of MongoDB, ExpressJS, ReactJS, and NodeJS</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 skills-card">
+                <img src="/assets/aws.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Cloud Computing</h5>
+                  <p class="card-text">Good understanding of Cloud Computing especially in AWS Platform</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#ffffff"
+          fill-opacity="1"
+          d="M0,64L80,90.7C160,117,320,171,480,176C640,181,800,139,960,117.3C1120,96,1280,96,1360,96L1440,96L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- end of skills -->
+
+    <!-- projects -->
+    <section id="projects">
+      <div class="container">
+        <h3>Projects</h3>
+        <div class="card mb-3 projects-card" style="min-height: 20vh">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="assets/aps.jpg" class="img-fluid rounded-start" alt="projects1" />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">PT. Angkasa Pura I Kantor Cabang Bandar Udara Adi Soemarmo</h5>
+                <p class="card-text">As Internship in charge of creating a good display for customer satisfactory system and admin system at PT. Angkasa Pura I Kantor Cabang Bandar Udara Adi Soemarmo.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 projects-card" style="min-height: 20vh">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="assets/mangan.jpg" class="img-fluid rounded-start" alt="projects2" />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">PT. Media Kreatif Pangan</h5>
+                <p class="card-text">Data entry for "MANGAN" website and aplication. Also responsible for some of the display in "MANGAN" web application. And create a food recommendation based on restaurant's content.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 projects-card" style="min-height: 20vh">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="assets/awscertified.png" class="img-fluid rounded-start " alt="projects3" />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">AWS Certified Cloud Practitioner</h5>
+                <My class="card-text">
+                  AWS Certified Cloud Practitioner since Nov 2020 by Amazon Web Service and DTS Kominfo Fresh Graduate Academy. Check my validation <a href="https://aw.certmetrics.com/amazon/public/verification.aspx" style="font-weight: bold; color: #0e0446;">here</a>. <br>
+                  My validation number : X20K8ZVLKEF1Q03B
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#d4e2f0"
+          fill-opacity="1"
+          d="M0,192L48,170.7C96,149,192,107,288,112C384,117,480,171,576,176C672,181,768,139,864,149.3C960,160,1056,224,1152,229.3C1248,235,1344,181,1392,154.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- end of projects -->
+
+    <!-- contact me -->
+<section id="contact_me">
+  <div class="container pb-3">
+    <div class="row">
+      <div class="col-md-8">
+        <h3 style="text-align: start;">Contact Me</h3>
+        <div class="form-floating mb-3 " style= "max-width:50vw;">
+          <input type="text" class="form-control" id="floatingInput" placeholder="Name">
+          <label for="floatingInput">Name</label>
+        </div>
+        <div class="form-floating mb-3 " style="max-width: 50vw;">
+          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+          <label for="floatingInput">Email address</label>
+        </div>
+        <div class="form-floating mb-3" style="max-width: 50vw;">
+          <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" style="min-height: 20vh;"></textarea>
+          <label for="floatingTextarea">Message</label>
+        </div>
+            <button class="btn btn-primary mt-2 submit" style="background-color: #0e0446;" type="submit">Submit</button>
+      </div>
+      <!-- <div class="col-md-2">
+        <img src="assets/android-chrome-192x192.png" alt="">
+      </div> -->
+    </div>
+    
+  </div>
+</section>
+<!-- end of contact me -->
+
+<!-- footer -->
+<footer class="text-white text-start" style="background-color: #0e0446">
+  <div class="row pt-3 mx-4">
+    <div class="col-md-4 my-auto">
+      <p>
+        Created with <i class="fas fa-heart text-danger"></i> by
+        <a href="https://www.instagram.com/rheshav_/ " class="text-white fw-bold">Rhesa Havilah Mondi</a>
+      </p>
+    </div>
+    <div class="col-md text-end my-auto">
+      <div class="row">
+        <p><i class="fab fa-github me-2"></i><a href="https://github.com/rheshav " class="text-white fw-bold">My Github</a></p>
+      </div>
+      <div class="row">
+        <p><i class="fab fa-linkedin me-2"></i><a href="https://www.linkedin.com/in/rheshav/ " class="text-white fw-bold">My Linkedin</a></p>
+      </div>
+      <div class="row">
+        <p><i class="fas fa-envelope-square me-2"></i><a href="https://mail.google.com/mail/u/0/#inbox?compose=new " class="text-white fw-bold">rhesa.havilah@gmail.com</a></p>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- end of footer -->
+   </body>
 </html>
